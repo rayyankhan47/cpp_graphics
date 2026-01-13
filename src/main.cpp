@@ -8,6 +8,7 @@
 #include <cstdlib>
 #include <ctime>
 #include <chrono>
+#include <cmath>
 
 Scene random_scene() {
     Scene world;

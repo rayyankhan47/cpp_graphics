@@ -6,6 +6,9 @@
 #include "Ray.h"
 #include "Vec3.h"
 #include <algorithm>
+#include <iostream>
+#include <cmath>
+#include <limits>
 
 class RayTracer {
 public:
@@ -15,7 +18,7 @@ public:
         }
 
         HitRecord rec;
-        if (world.hit(r, 0.001, INFINITY, rec)) {
+        if (world.hit(r, 0.001, std::numeric_limits<double>::infinity(), rec)) {
             Ray scattered;
             Color attenuation;
             if (rec.mat->scatter(r, rec, attenuation, scattered)) {
