@@ -1,6 +1,7 @@
 #include "../include/Material.h"
 #include "../include/Sphere.h"
 #include <cmath>
+#include <cstdlib>
 
 // Forward declaration helper for random
 Vec3 random_in_unit_sphere() {
