@@ -116,6 +116,4 @@ Potential additions for future development:
 - BVH (Bounding Volume Hierarchy) acceleration structure
 - Multi-threading for faster rendering
 
-## License
 
-This project is provided as-is for educational and personal use.
